@@ -20,14 +20,14 @@ n >> 1
 n & (n-1) == 0
 ```
 
+Note that 0 is incorrectly considered a power of 2 here. To remedy this, use:
+
+```
+n && !(n & (n - 1));
+```
+
 ## Minimum and Maximum of two numbers
 
 ```
 r = y ^ ((x ^ y) & -(x < y))
-```
-
-Note that 0 is incorrectly considered a power of 2 here. To remedy this, use:
-
-```
-f = v && !(v & (v - 1));
 ```
