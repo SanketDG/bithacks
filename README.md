@@ -2,6 +2,8 @@
 
 A collection of bit manipulation techniques.
 
+*The examples are geared towards C but will work with most languages.*
+
 ## Multiply a number by 2
 
 ```
