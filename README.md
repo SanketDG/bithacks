@@ -45,7 +45,7 @@ Note that 0 is incorrectly considered a power of 2 here. To remedy this, use:
 
 ```python
 >>> n = 8
->>> n && !(n & (n - 1)) == 0
+>>> n and !(n & (n - 1)) == 0
 True
 ```
 
@@ -67,5 +67,7 @@ False
 >>> x = 5
 >>> y = 2
 >>> y ^ ((x ^ y) & -(x < y)) # minimum
+2
 >>> x ^ ((x ^ y) & -(x < y)) # maximum
+5
 ```
