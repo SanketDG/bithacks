@@ -19,6 +19,16 @@ A collection of bit manipulation techniques.
 3
 ```
 
+## Check if an integer is even or odd
+
+```python
+>>> 6 & 1 == 0
+True
+
+>>> 5 & 1 == 0
+False
+```
+
 ## Check if a number is a power of two
 
 ```python
@@ -37,6 +47,18 @@ Note that 0 is incorrectly considered a power of 2 here. To remedy this, use:
 >>> n = 8
 >>> n && !(n & (n - 1)) == 0
 True
+```
+
+## Check whether the n-th bit is set of an integer
+
+```python
+>>> n = 5
+>>> n & (1 << 2) > 0 # 2nd bit is set in 101 (zero-indexed).
+True
+
+>>> n = 2
+>>> n & (1 << 2) > 0 # 2nd bit is not set 010
+False
 ```
 
 ## Minimum and Maximum of two numbers
