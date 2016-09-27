@@ -10,13 +10,15 @@ A collection of bit manipulation techniques.
 ```python
 >>> 5 << 1
 10
+
 ```
 
 ## Divide a number by 2
 
 ```python
->>> 6 << 1
+>>> 6 >> 1
 3
+
 ```
 
 ## Check if an integer is even or odd
@@ -27,6 +29,7 @@ True
 
 >>> 5 & 1 == 0
 False
+
 ```
 
 ## Check if a number is a power of two
@@ -39,14 +42,16 @@ True
 >>> n = 6
 >>> n & (n-1) == 0
 False
+
 ```
 
 Note that 0 is incorrectly considered a power of 2 here. To remedy this, use:
 
 ```python
 >>> n = 8
->>> n and !(n & (n - 1)) == 0
+>>> n and not (n & (n - 1))
 True
+
 ```
 
 ## Check whether the n-th bit is set of an integer
@@ -59,6 +64,7 @@ True
 >>> n = 2
 >>> n & (1 << 2) > 0 # 2nd bit is not set 010
 False
+
 ```
 
 ## Minimum and Maximum of two numbers
@@ -70,4 +76,5 @@ False
 2
 >>> x ^ ((x ^ y) & -(x < y)) # maximum
 5
+
 ```
