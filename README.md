@@ -78,3 +78,14 @@ False
 5
 
 ```
+
+## Convert integer to binary number
+
+```python
+>>> def binary(s):
+...     return str(s) if s <= 1 else binary(s >> 1) + str(s & 1)
+>>> binary(28)
+'11100'
+
+```
+
