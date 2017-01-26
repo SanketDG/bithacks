@@ -135,3 +135,10 @@ False
 '11100'
 
 ```
+
+## Resources
+
+* [awesome-bits](https://github.com/keon/awesome-bits)
+* [A Bit of Fun: Fun with Bits - Topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/a-bit-of-fun-fun-with-bits/)
+* [Bit Manipulation - HackerEarth](https://www.hackerearth.com/practice/notes/bit-manipulation/)
+* [Bit Twiddling Hacks - Stanford](https://graphics.stanford.edu/~seander/bithacks.html)
