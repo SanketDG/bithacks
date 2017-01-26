@@ -21,6 +21,41 @@ A collection of bit manipulation techniques.
 
 ```
 
+## Multiply by mth power of 2
+
+```python
+>>> n = 5
+>>> n << 3
+40
+
+```
+
+## Divide by mth power of 2
+
+```python
+>>> n = 40
+>>> n >> 3
+5
+
+```
+
+## Exchange two values
+
+```python
+>>> x = 3
+>>> y = 5
+
+>>> x ^= y
+>>> y ^= x
+>>> x ^= y
+
+>>> x
+5
+>>> y
+3
+
+```
+
 ## Check if an integer is even or odd
 
 ```python
@@ -31,6 +66,16 @@ True
 >>> n = 5
 >>> n & 1 == 0
 False
+
+```
+
+## Check Equality of two numbers
+
+```python
+>>> x = 42
+>>> y = 42
+>>> not x ^ y
+True
 
 ```
 
