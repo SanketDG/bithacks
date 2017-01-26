@@ -24,10 +24,12 @@ A collection of bit manipulation techniques.
 ## Check if an integer is even or odd
 
 ```python
->>> 6 & 1 == 0
+>>> n = 6
+>>> n & 1 == 0
 True
 
->>> 5 & 1 == 0
+>>> n = 5
+>>> n & 1 == 0
 False
 
 ```
@@ -88,4 +90,3 @@ False
 '11100'
 
 ```
-
